@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="images/icon1.ico" type="image/x-icon">
+    <script
+      src="https://kit.fontawesome.com/00987df2f6.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Rock(Linktree)</title>
+  </head>
+  <style>
+    * {
+      font-family: "Alexandria", sans-serif;
+      /* border: 1px solid white; */
+    }
+    body {
+      background-color: black;
+      margin: 0px;
+      padding: 0px;
+      color: white;
+    }
+    div.mainDiv {
+      position: relative;
+    }
+    #background {
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      right: 0px;
+      left: 0px;
+      width: 100wh;
+      height: 100vh;
+      background-image: url("images/wallpaperflare.com_wallpaper.jpg");
+      background-position: center;
+      background-size: cover;
+
+      /* add blur effect */
+      filter: blur(18px);
+      opacity: 0.5;
+    }
+
+    /* Profile pic and name */
+    .mainDiv2 {
+      position: relative;
+    }
+    #pic {
+      position: relative;
+      display: block;
+      
+      /* object-fit: cover; */
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 50%;
+    }
+    #imgDiv {
+      padding-top: 50px;
+      padding-bottom: 20px;
+    }
+    .name-container {
+      text-align: center;
+    }
+    .name-container #name {
+      display: inline-block;
+      text-align: center;
+      font-weight: bold;
+    }
+    #tickImg{
+      width: 15px;
+      height: 15px;
+    }
+
+
+    /* -----social media links----- */
+    .center-content-container {
+      position: relative;
+      height: auto;
+    }
+    .content-container {
+      /* border: 1px solid red; */
+      margin: auto;
+      width: 50%;
+      text-align: center;
+    }
+    .content-container i{
+      position: relative;
+      padding: 30px 12px;
+      /* cursor: pointer; */
+      /* border: 1px solid blue; */
+    }
+    .content-container i a{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      /* border: 1px solid white; */
+    }
+
+    /* -----boxses after social media */
+    .box-content-container{
+        position: relative;
+        margin-top: 20px;
+    }
+    
+    .box-content{
+        position: relative;
+        margin: auto;
+        max-width: 680px;
+        width: 80%;
+        height:60px;
+        border-radius: 5px;
+        background-color: black;
+        cursor: pointer;
+    }
+    .box-content a{
+      position: absolute;
+      /* border: 1px solid white; */
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    .box-image{
+        position: relative;
+        height: 3em;
+        width: 3rem;
+        top: 50%;
+        transform: translate(0, -50%);
+        margin-left: 10px;
+        border-radius: 8px;
+        /* background-image: url("/tshirt.jpg"); */
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* border: 1px solid white; */
+    }
+    .box-image img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius:5px;
+    }
+    
+    .box-text{
+        position: absolute;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        width: fit-content;
+        transform: translate(-50%, -50%);
+        line-height: 60px;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        font-weight: lighter;
+        text-transform: uppercase;   
+        /* border: 1px solid; */
+        z-index: 0;
+    }
+  </style>
+  <body>
+    <div class="mainDiv">
+      <div id="background"></div>
+      <div class="mainDiv2">
+        <div id="imgDiv">
+          <img
+            id="pic"
+            src="images/wallpaperflare.com_wallpaper.jpg"
+            alt="profile"
+            width="100px"
+            height="100px"
+          />
+        </div>
+        <div class="name-container">
+          <div id="name">@TheRock</div>
+          <img id="tickImg" src="images/correct.png"  alt="tick.img">
+        </div>
+
+        <!-- social media links -->
+        <div class="center-content-container">
+          <div class="content-container">
+            <i class="fa-brands fa-instagram fa-xl">
+              <a href="https://instagram.com/therock" target="_blank"></a>
+            </i>
+            <i class="fa-brands fa-tiktok fa-xl">
+              <a href="https://tiktok.com/@therock" target="_blank"></a>
+            </i>
+            <i class="fa-brands fa-twitter fa-xl">
+              <a href="https://twitter.com/therock" target="_blank"></a>
+            </i>
+            <i class="fa-brands fa-youtube fa-xl">
+              <a href="https://www.youtube.com/channel/UCBdw4dLCLLHmTgAOnW4V0hQ" target="_blank"></a>
+            </i>
+            <i class="fa-brands fa-facebook fa-xl">
+              <a href="https://www.facebook.com/DwayneJohnson" target="_blank"></a>
+            </i>
+          </div>
+        </div>
+
+        <!-- boxes -->
+        <div class="box-content-container">
+          <div class="box-content">
+              <a href="https://www.thesouledstore.com/men/t-shirts" target="_blank"></a>
+                <div class="box-image">
+                  <img src="images/tshirt2.jpg" alt="tshirt.img">
+                </div>
+                <div class="box-text">50% dicount on tshirts </div>
+            </div>  
+        </div>
+
+        <div class="box-content-container">
+            <div class="box-content">
+              <a href="https://www.amazon.in/AVVATAR-PROTEIN-Belgian-Chocolate-Flavour/dp/B09KGHM8DY/ref=sr_1_1_sspa?adgrpid=132063441769&ext_vrnc=hi&hvadid=558704021735&hvdev=c&hvlocphy=9299869&hvnetw=g&hvqmt=b&hvrand=4629831373293675951&hvtargid=kwd-4202748459&hydadcr=9498_1780847&keywords=on%2Bprotein%2Bpower&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1" target="_blank"></a>
+                <div class="box-image">
+                  <img src="images/proteinPowder.jpg" alt="proteinPowder.img">
+                </div>
+                <div class="box-text">best whey protein </div>
+            </div>  
+        </div>
+
+        <div class="box-content-container">
+            <div class="box-content">
+              <a href="https://goldsgym.in/" target="_blank"></a>
+                <div class="box-image">
+                  <img src="images/gymGuy.jpg" alt="gymGuy.img">
+                </div>
+                <div class="box-text">the gym where i go </div>
+            </div>  
+        </div>
+
+        <div class="box-content-container">
+            <div class="box-content">
+              <a href="https://in.pinterest.com/findmilon/best-bike-collection/" target="_blank"></a>
+                <div class="box-image">
+                  <img src="images/bike.jpg" alt="bike.img">
+                </div>
+                <div class="box-text">my bike collection </div>
+            </div>  
+        </div>
+
+        <div class="box-content-container">
+            <div class="box-content">
+              <a href="images/image1.jpg" target="_blank"></a>
+                <div class="box-image">
+                  <img src="images/girl.jpg" alt="girl.img">
+                </div>
+                <div class="box-text">[18+] onlyfans account </div>
+            </div>  
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
